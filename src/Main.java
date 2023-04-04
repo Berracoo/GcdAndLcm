@@ -61,4 +61,12 @@ public class Main {
         lcm = (n1 * n2) / gdc;
         System.out.println("Ldc of n1 and n2 is : " + lcm);
     }
+    //Another way of calculating lcm
+     /*for(i = 1; i<=(n1*n2); i++){
+        if(i % n1 == 0 && i % n2 == 0){
+            System.out.println(i);
+            break;
+            */
+        }
+    }
 }
