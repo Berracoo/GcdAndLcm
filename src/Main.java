@@ -23,6 +23,19 @@ public class Main {
 
         }else if(n1 < n2){
             minValue = n1;
+        }else if( n1 <= 0 || n2 <= 0){
+            while(n1 <= 0 || n2 <= 0){
+                System.out.print("New n1 number : ");
+                n1 = input.nextInt();
+                System.out.print("New n2 number : ");
+                n2 = input.nextInt();
+                if(n1 > n2){
+                    minValue = n2;
+                }else{
+                    minValue = n1;
+                }
+            }
+            
         }
         else{
             System.out.println("Please be sure both of them aren't equal to each other!");
